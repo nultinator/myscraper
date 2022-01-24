@@ -43,7 +43,7 @@ async fn main() {
     println!("Link: {}", href);
     writeln!(
         &mut writer,
-        "{}:\n  {}",
+        "{},{}",
         &serde_json::to_string(&inner).unwrap(),
         &serde_json::to_string(&href).unwrap());
         }
