@@ -3,7 +3,6 @@ use reqwest::StatusCode;
 use scraper:: { Html, Selector };
 use std::fs::File;
 use std::io::Write;
-use std::ptr::eq;
 
 mod models;
 mod utils;
