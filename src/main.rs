@@ -22,7 +22,7 @@ async fn get_site() {
     let start_time = st.format("%Y-%m-%d_%H.%M.%S");
     println!("Start Time: {}", start_time);
     let client = utils::get_client();
-    let filename = format!("{}.csv", domain);
+    let filename = format!("{}.csv", domain.trim());
     let mut writer = File::create(&filename).unwrap();
     let url = format!("https://{}", &domain);
     let result = client.get(url).send().await.unwrap();
