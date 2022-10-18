@@ -4,6 +4,7 @@ A web scraper written in Rust. You must have Rust and Cargo installed to use it.
 
 ```
 git clone https://github.com/nultinator/myscraper
+cd myscraper
 cargo build --release
 cp target/release/nultiscraper nultiscraper
 rm -rf target
