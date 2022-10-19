@@ -31,7 +31,7 @@ Start Time: 2022-10-19_11.33.35
 No need for trips to the bank or ATM. Your Ycash is always at your fingertips, 24 hours a day, 365 days a year. Send Ycash to anyone on the planet within minutes.
 Borderless, inflation-free cash is empowering and fun! You will love earning, saving, and spending your Ycash.
 Completion Time: 2022-10-19_11.33.36
-Time Elapsed: PT0.482481532Ster a domain name:
+Time Elapsed: PT0.482481532S
 
 ```
 
