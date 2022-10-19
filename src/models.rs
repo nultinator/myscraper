@@ -1,7 +1,7 @@
 use serde::Serialize;
 
 #[derive(Debug, Serialize, Clone)]
-pub struct Site_Data {
+pub struct SiteData {
     pub title: String,
     pub link: String,
     pub domain_name: String, 
