@@ -37,7 +37,6 @@ async fn get_site() {
     let url = format!("https://{}", &domain);
     let result = client.get(url).send().await.unwrap();
 
-    //Timestamp completion
     let dt = chrono::Local::now();
     println!("{}", dt.format("%Y-%m-%d_%H.%M.%S"));
     let raw_html = match result.status() {
@@ -47,7 +46,6 @@ async fn get_site() {
 
 
     //Parse site data
-    let site_data: Vec<models::SiteData> = Vec::new();
 
     let document = Html::parse_document(&raw_html);
     let selector = Selector::parse(&choice).unwrap();
@@ -68,10 +66,11 @@ async fn get_site() {
             &serde_json::to_string(&inner).unwrap(),
             &serde_json::to_string(&href).unwrap());
     }
-
+    //Timestamp completion and calculate elapsed time
     let et = chrono::Local::now();
     let end_time = et.format("%Y-%m-%d_%H.%M.%S");
     let elapsed_time = et - st;
+    //Print elapsed time and completion timestamp to console
     println!("Completion Time: {}", end_time);
     println!("Time Elapsed: {}", elapsed_time);
 }
